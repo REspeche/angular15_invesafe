@@ -7,7 +7,20 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         }
       },
       "root": "",
@@ -30,9 +43,15 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/framework/css/bootstrap.min.css",
+              "src/assets/framework/css/mdb.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/framework/js/jquery-3.4.1.min.js",
+              "src/assets/framework/js/bootstrap.js",
+              "src/assets/framework/js/mdb.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -100,5 +119,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

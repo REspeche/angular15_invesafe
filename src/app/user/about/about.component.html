@@ -1,0 +1,160 @@
+<!--Section: Banner -->
+<section class="bg-dark text-light space-lg">
+    <img src="/assets/img/back/back_about1.jpg" class="bg-image opacity-60">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-12 col-md-10 col-lg-7">
+                <span class="title-decorative">{{ 'ABOUT_SLIDE_SUBTITLE' | translate }}</span>
+                <h1 class="display-4">{{ 'ABOUT_SLIDE_TITLE' | translate }}</h1>
+                <p class="mb-3">{{ 'ABOUT_SLIDE_TEXT' | translate }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section: Banner -->
+<!--Section: Acerca de Nosotros -->
+<section class="p-100 wow fadeIn" id="about_us">
+    <div class="container">
+        <div class="row justify-content-center text-center section-intro">
+            <div class="col-12">
+                <span class="title-decorative">{{ 'ABOUT_SECTION1_SUBTITLE' | translate }}</span>
+                <h2 class="display-4">{{ 'ABOUT_SECTION1_TITLE' | translate }}</h2>
+                <p class="mb-3">{{ 'ABOUT_SECTION1_TEXT1' | translate }}</p>
+                <p class="mb-3">{{ 'ABOUT_SECTION1_TEXT2' | translate }}</p>
+                <p class="mb-3">{{ 'ABOUT_SECTION1_TEXT3' | translate }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section: Acerca de Nosotros -->
+<!--Section: Frase -->
+<section class="bg-gradient text-white p-50 wow fadeIn">
+    <article class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <blockquote class="blockquote">
+                    <h4>
+                        “<span>{{ 'ABOUT_SECTION2_TEXT' | translate }}</span>”
+                    </h4>
+                    <footer class="blockquote-footer title-decorative">{{ 'ABOUT_SECTION2_SING' | translate }}</footer>
+                </blockquote>
+                <p class="lead">{{ 'ABOUT_SECTION2_QUOTE' | translate }}</p>
+            </div>
+        </div>
+    </article>
+</section>
+<!--Section: Frase -->
+<!--Section: Team -->
+<section class="p-50">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center">{{ 'ABOUT_SECTION3_TITLE' | translate }}</h2>
+        </div>
+        <div class="row no-gutters justify-content-center">
+            <div class="col-12 col-lg-10">
+                <ul class="feature-list row justify-content-center">
+
+                    <li class="col-6 col-lg-4 text-center">
+                        <img src="/assets/img/team/alfredo2.png" class="img-team mb-3 obj-center" alt="Image">
+                        <h5 class="mb-0 bold">{{ 'ABOUT_SECTION3_TEAM3_NAME' | translate }}</h5>
+                        <span>{{ 'ABOUT_SECTION3_TEAM3_POSITION' | translate }}</span>
+                        <ul class="list-inline list-links mt-2">
+                            <li class="list-inline-item"><a href="https://ar.linkedin.com/in/alfredogaliano" target="_blank"><fa-icon [icon]="faLinkedinIn"></fa-icon></a></li>
+                        </ul>
+                    </li>
+                    <li class="col-6 col-lg-4 text-center">
+                        <img src="/assets/img/team/ricardo2.png" class="img-team mb-3 obj-center" alt="Image">
+                        <h5 class="mb-0 bold">{{ 'ABOUT_SECTION3_TEAM1_NAME' | translate }}</h5>
+                        <span>{{ 'ABOUT_SECTION3_TEAM1_POSITION' | translate }}</span>
+                        <ul class="list-inline list-links mt-2">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ricardo-espeche/" target="_blank"><fa-icon [icon]="faLinkedinIn"></fa-icon></a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center section-outro">
+            <div class="col-lg-4 col-md-5">
+                <h6 class="bold">{{ 'ABOUT_SECTION3_QUESTION' | translate }}</h6>
+                <p>{{ 'ABOUT_SECTION3_ANSWER' | translate }}</p>
+                <a href="#" ng-click="clickAction(114)"><span>{{ 'ABOUT_SECTION3_LINK' | translate }}</span> <i class="far fa-arrow-alt-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section: Team -->
+<!--Section: Partners -->
+<section class="bg-dark p-50">
+    <div class="container">
+        <div class="col-12 text-center">
+            <h2>{{ 'ABOUT_SECTION4_TITLE' | translate }}</h2>
+            <p class="lead mt-2">{{ 'ABOUT_SECTION4_TEXT' | translate }}</p>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <ul id="carLogo" class="carrusel" ng-init="initCarrueselLogo('carLogo')">
+                    <li>
+                        <div class="fitLogo">
+                            <a href="http://carranzatorres.com.ar/" target="_blank">
+                                <img src="/assets/img/team/logo1.png" class="logoCom mb-2" alt="Carranza Torres & Asociados"/>
+                            </a>
+                        </div>
+                        <span>{{ 'ABOUT_SECTION4_DETAIL1' | translate }}</span>
+                    </li>
+                    <li>
+                        <div class="fitLogo">
+                            <a href="https://thebox.lat/" target="_blank">
+                                <img src="/assets/img/team/logo2.png" class="logoCom mb-2" alt="TheBOX.lat"/>
+                            </a>
+                        </div>
+                        <span>{{ 'ABOUT_SECTION4_DETAIL2' | translate }}</span>
+                    </li>
+                    <li>
+                        <div class="fitLogo">
+                            <a href="http://www.camarco.org.ar/" target="_blank">
+                                <img src="/assets/img/team/logo3.png" class="logoCom mb-2" alt="Cámara Argentina de la Construcción"/>
+                            </a>
+                        </div>
+                        <span>{{ 'ABOUT_SECTION4_DETAIL3' | translate }}</span>
+                    </li>
+                    <li>
+                        <div class="fitLogo">
+                            <a href="https://parabolt.net/" target="_blank">
+                                <img src="/assets/img/team/logo4.png" class="logoCom mb-2" alt="Parabolt.net"/>
+                            </a>
+                        </div>
+                        <span>{{ 'ABOUT_SECTION4_DETAIL4' | translate }}</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section: Partners -->
+<!--Section: Mapa -->
+<section class="" id="map">
+    <div class="row">
+        <div class="col-12 col-lg-6 p-0">
+            <div class="cta_background left-contact-block d-flex align-items-center justify-content-center text-light">
+                <div class="col-sm-8 text-left">
+                    <p class="contact_name">{{ 'ABOUT_SECTION5_BRAND' | translate }}</p>
+                    <div class="row justify-content-left mb-4">
+                        <div class="col-sm-4">
+                            <div class="justify-content-center form-divider-pink"></div>
+                        </div>
+                    </div>
+                    <p class="contact_address" [innerHTML]="'ABOUT_SECTION5_ADDRESS' | translate"></p>
+                    <div class="mt-5">
+                        <a href="/contact" class="btn btn-linea-celeste btn-lg float-right">{{ 'ABOUT_SECTION5_BTN' | translate }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6 p-0 min-height bg-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112222.13767776008!2d-81.42506579335074!3d28.4812992552671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20FL!5e0!3m2!1sen!2sus!4v1698763250105!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</section>
+<!--Section: Mapa -->

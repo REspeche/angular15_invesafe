@@ -1,0 +1,9 @@
+<div class="ml-2 mr-1">
+    <a (click)="changeLanguage('es')" class="nav-link d-inline-block pl-0" title="{{ 'BUTTON_LANG_ES' | translate}}" [hidden]="lang == 'es'">
+        <img src="/assets/framework/img/flags/es.png"/>
+    </a>
+    <a (click)="changeLanguage('en')" class="nav-link d-inline-block pl-0" title="{{ 'BUTTON_LANG_EN' | translate}}" [hidden]="lang == 'en'">
+       <img src="/assets/framework/img/flags/en.png"/>
+    </a>
+  </div>
+  
