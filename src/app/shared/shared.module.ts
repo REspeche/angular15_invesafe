@@ -4,12 +4,18 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TranslateModule } from '@ngx-translate/core';
 
 import { RightIconsComponent } from './components/right-icons/right-icons.component';
-import { FlagsLanguageComponent } from './flags-language/flags-language.component';
+import { FlagsLanguageComponent } from './components/flags-language/flags-language.component';
+import { BannerPageComponent } from './components/banner-page/banner-page.component';
+import { CustomCurrencyPipe } from './pipes/custom-currency.pipe';
+import { ScrollToTopDirective } from './directives/scroll-to-top.directive';
 
 @NgModule({
   declarations: [
     RightIconsComponent,
-    FlagsLanguageComponent
+    FlagsLanguageComponent,
+    BannerPageComponent,
+    CustomCurrencyPipe,
+    ScrollToTopDirective
   ],
   imports: [
     CommonModule,
@@ -19,7 +25,9 @@ import { FlagsLanguageComponent } from './flags-language/flags-language.componen
   exports: [
     RightIconsComponent,
     FlagsLanguageComponent,
-    TranslateModule
+    TranslateModule,
+    BannerPageComponent,
+    ScrollToTopDirective
   ]
 })
 export class SharedModule { }

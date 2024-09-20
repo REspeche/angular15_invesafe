@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RootScopeService } from '../../core/services/root-scope.service';
+import { RootScopeService } from '../../../core/services/root-scope.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

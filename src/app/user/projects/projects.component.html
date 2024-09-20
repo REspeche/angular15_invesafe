@@ -1,0 +1,66 @@
+<app-banner-page title="{{'PROJECTS_SLIDE_TITLE' | translate}}" text="{{'PROJECTS_SLIDE_TEXT' | translate}}" image="back_projects1"/>
+  
+<!--Section: Projects -->
+<section class="p-100" id="projects">
+    <div class="container">
+        <div class="row justify-content-center text-center section-intro">
+            <div class="col-12 col-md-9 col-lg-8">
+                <span class="title-decorative">{{ 'PROJECTS_SECTION1_SUBTITLE' | translate }}</span>
+                <h2 class="display-4">{{ 'PROJECTS_SECTION1_TITLE' | translate }}</h2>
+                <p class="mb-3">{{ 'PROJECTS_SECTION1_TEXT' | translate }}</p>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div class="container py-4">
+
+            <!--First row-->
+            <div class="row mb-5">
+  
+                <div [hidden]="loadList">{{ 'LOADING' | translate }}</div>
+    
+                <!-- Soon -->
+                <div class="card mt-3 mb-3 col-12 card-fix bg-gray opacity-90" [hidden]="!(lstProjects.length==0 && loadList)">
+                    <div class="row g-0">
+                    <div class="col-12 text-center py-1 text-white font-weight-bold text-uppercase bg-warning">
+                        <span>{{ 'PROJECT_CARD_SOON_TITLE' | translate }}</span>
+                    </div>
+                    </div>
+                    <div class="row g-0">
+                    <div class="col-sm-6 col-md-4 col-lg-7 pl-0">
+                        <div class="img-asset" style="background-image: url('/assets/img/theme/project-evaluation.jpg')"></div>
+                    </div>
+                    <div class="col-sm-6 col-md-8 col-lg-5">
+                        <div class="card-body">
+                        <h5>{{ 'PROJECT_CARD_SOON_LABEL' | translate }}</h5>
+                        <div class="_s-row pt-3">
+                            <span class="_s-text-secondary">{{ 'PROJECT_CARD_SOON_TEXT' | translate }}</span>
+                        </div>
+    
+                        <div class="row" ng-hide="userInfo.isLogin">
+                            <div class="col-12 px-0">
+                                <div class="btn btn-fucsia btn-view_property m-0" ng-click="clickSignUp()">{{ 'BUTTON_SIGNUP' | translate }}</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- /Soon -->
+    
+                <!--Grid column-->
+                <div class="col-lg-12 col-md-12 px-4 text-center mt-4" [hidden]="(lstProjects.length==0 && loadList)">
+    
+                    <a class="btn btn-linea-celeste btn-lg" (click)="showPreviousProperties()">{{ 'BTN_PREVIOUS_PROPERTIES' | translate }}</a>
+    
+                </div>
+                <!--/Grid column-->
+    
+                </div>
+                <!--/First row-->
+  
+        </div>
+        <!--/Projects-->
+    </div>
+</section>
+<!--Section: Projects -->

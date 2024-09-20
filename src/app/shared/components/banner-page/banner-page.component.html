@@ -1,0 +1,27 @@
+<!--Section: Banner -->
+<section class="bg-dark text-white space-{{size}}">
+    <img [src]="'/assets/img/back/' + image + '.jpg'" class="bg-image opacity-50">
+    <div class="container">
+        <div class="row justify-content-end" *ngIf="align=='end'">
+            <div class="col-12 col-md-8 col-lg-7 text-center">
+                <h1 class="display-4" [hidden]="!title">{{title}}</h1>
+                <p class="mb-3" [hidden]="!text">{{text}}</p>
+                <div [hidden]="showsocials==0">
+                  <a href="https://www.facebook.com/invesafe/" target="_blank" class="btn btn-linea-celeste btn-md"><fa-icon class="fa-2x" [icon]="faFacebookF"></fa-icon></a>
+                  <a href="https://www.linkedin.com/company/invesafe" target="_blank" class="btn btn-linea-celeste btn-md"><fa-icon class="fa-2x" [icon]="faLinkedin"></fa-icon></a>
+                  <a href="https://twitter.com/Invesafe" target="_blank" class="btn btn-linea-celeste btn-md"><fa-icon class="fa-2x" [icon]="faTwitter"></fa-icon></a>
+                  <a href="https://instagram.com/Invesafe.us" target="_blank" class="btn btn-linea-celeste btn-md"><fa-icon class="fa-2x" [icon]="faInstagram"></fa-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="align=='start'">
+            <div class="col-12">
+                <div class="space-lg pb-0">
+                    <h1 class="display-4" [hidden]="!title">{{title}}</h1>
+                    <span class="lead" [hidden]="!text">{{text}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section: Banner -->

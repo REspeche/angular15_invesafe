@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import * as $ from 'jquery';
 
 import { RootScopeService } from './core/services/root-scope.service';
-import { UserInfo } from './user-info';
+import { UserInfo } from './core/user-info';
 
 @Component({
   selector: 'app-root',

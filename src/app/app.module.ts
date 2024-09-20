@@ -11,6 +11,10 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './user/home/home.component';
 import { AboutComponent } from './user/about/about.component';
+import { OperativeComponent } from './user/operative/operative.component';
+import { ProjectsComponent } from './user/projects/projects.component';
+import { DevelopersComponent } from './user/developers/developers.component';
+import { ContactComponent } from './user/contact/contact.component';
 
 declare global {
   interface Window { 
@@ -30,7 +34,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    OperativeComponent,
+    ProjectsComponent,
+    DevelopersComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

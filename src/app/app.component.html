@@ -38,13 +38,13 @@
                 <!-- menu Left -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a class="nav-link" href="#" ng-click="clickAction(109)">{{ 'MENU_OPERATIVE' | translate }}</a>
+                        <a class="nav-link" routerLink="/operative">{{ 'MENU_OPERATIVE' | translate }}</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a class="nav-link" href="#" ng-click="clickAction(105)">{{ 'MENU_PROJECTS' | translate }}</a>
+                        <a class="nav-link" routerLink="/projects">{{ 'MENU_PROJECTS' | translate }}</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                        <a class="nav-link" href="#" ng-click="clickAction(113)">{{ 'MENU_DEVELOPERS' | translate }}</a>
+                        <a class="nav-link" routerLink="/developers">{{ 'MENU_DEVELOPERS' | translate }}</a>
                     </li>
                     <li class="nav-item dropdown" data-toggle="collapse" data-target=".navbar-collapse.show">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -55,7 +55,7 @@
                             <a class="dropdown-item" routerLink="/about" routerLinkActive="active">{{ 'MENU_ABOUT' | translate }}</a>
                             </li>
                             <li>
-                            <a class="dropdown-item" href="#" ng-click="clickAction(111)">{{ 'MENU_CONTACT' | translate }}</a>
+                            <a class="dropdown-item" routerLink="/contact" routerLinkActive="active">{{ 'MENU_CONTACT' | translate }}</a>
                             </li>
                             <li><hr class="dropdown-divider"></li>
                             <li>
@@ -114,21 +114,21 @@
                     <div class="col-6 col-lg-3">
                         <h6>{{ 'FOTTER_SECTION1' | translate }}</h6>
                         <ul class="list-unstyled">
-                            <li> <a href="#" ng-click="clickAction(110)">{{ 'MENU_ABOUT' | translate }}</a> </li>
-                            <li> <a href="#" ng-click="clickAction(111)">{{ 'MENU_CONTACT' | translate }}</a> </li>
+                            <li> <a routerLink="/about">{{ 'MENU_ABOUT' | translate }}</a> </li>
+                            <li> <a routerLink="/contact">{{ 'MENU_CONTACT' | translate }}</a> </li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-3">
                         <h6>{{ 'FOTTER_SECTION2' | translate }}</h6>
                         <ul class="list-unstyled">
-                            <li> <a href="#" ng-click="clickAction(113)">{{ 'MENU_DEVELOPERS' | translate }}</a> </li>
+                            <li> <a routerLink="/developers">{{ 'MENU_DEVELOPERS' | translate }}</a> </li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-3">
                         <h6>{{ 'FOTTER_SECTION3' | translate }}</h6>
                         <ul class="list-unstyled">
-                            <li> <a href="#" ng-click="clickAction(109)">{{ 'MENU_OPERATIVE' | translate }}</a> </li>
-                            <li> <a href="#" ng-click="clickAction(105)" [hidden]="!canInvest">{{ 'MENU_PROJECTS' | translate }}</a> </li>
+                            <li> <a routerLink="/operative">{{ 'MENU_OPERATIVE' | translate }}</a> </li>
+                            <li> <a routerLink="/project">{{ 'MENU_PROJECTS' | translate }}</a> </li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-3">

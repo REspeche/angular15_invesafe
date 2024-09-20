@@ -1,3 +1,5 @@
+@import './shared/variables';
+
 /* Navbar animation */
   .navbar {
     background-color: rgba(0, 0, 0, 0.2);
@@ -19,33 +21,6 @@
       min-width: 195px;
     }
   }
-  
-  .feature-list > li {
-    margin-bottom: 3rem; }
-  
-  .feature-list > li[class*='col'] {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  
-  .feature-list > li[class*='col'] .card {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1; }
-  
-  .media > .avatar:first-child {
-    margin-right: 1.5rem; }
-  
-  .avatar {
-    border-radius: 50%; }
-  
-  .avatar.avatar-lg {
-    width: 7.5rem;
-    height: 7.5rem; }
   
   .text-white {
     color: #fff !important; }
@@ -69,21 +44,6 @@
     color: #adb5bd !important;
     -webkit-transition: color .2s ease;
     transition: color .2s ease; }
-  
-  .space-0 {
-    padding: 0; }
-  
-  .space-xxs {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem; }
-  
-  .space-xs {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
-  
-  .space-sm {
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
   
   .list-inline > .list-inline-item:not(:last-child) {
     margin-right: 0.75rem; }
@@ -201,22 +161,6 @@
     width: 140px;
     margin: 0 auto; }
   
-  .number-circle {
-    position: relative;
-    margin-right: 5px;
-    color: rgba(239, 47, 92, 0.8);
-    margin-top: -3px;
-    vertical-align: middle;
-    font-size: 27px; }
-    .number-circle span {
-      position: absolute;
-      left: 9px;
-      top: 5px;
-      color: #fff;
-      font-size: 17px;
-      font-family: arial;
-      font-weight: 100; }
-  
   .logo-cnv img {
     height: 25px;
     vertical-align: baseline; }
@@ -224,10 +168,6 @@
   .logo-cnv span.text-muted {
     display: block;
     margin-top: -9px; }
-  
-  div.title-blue {
-    font-size: 22px;
-    color: #0275d8; }
   
   img#incloux {
     margin-top: 3px; }
@@ -259,9 +199,6 @@
   
   .modal-dialog.modal-notify.modal-info .modal-header {
     min-height: 69px; }
-  
-  .card-fix ._s-row {
-    min-height: 167px; }
   
   /* youtube background video */
   #videoSlide .vc_video-bg {

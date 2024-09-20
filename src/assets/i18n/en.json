@@ -198,7 +198,8 @@
   "BTN_CANCEL": "Cancel",
   "BTN_CLOSE": "Close",
   "BTN_UPDATE": "Update",
-
+  "BTN_PREVIOUS_PROPERTIES": "Previous Projects",
+  
   "INF_USA_CITIZEN": "<b>USA US - Investor Notice</b><br/>invesafe is not yet open to accredited US investors!<br/><small>We are working so that soon US residents can invest while being accredited.</small>",
 
   "TXT_CHANGE_PASS": "Type the new password to entry the system.",
@@ -377,7 +378,7 @@
   "DEVELOPERS_SECTION1_TITLE": "Get Financing",
   "DEVELOPERS_SECTION1_TEXT": "Invesafe allows you to obtain financing for your projects through small investors through crowdfunding. A faster and more convenient system, unlike bank loans or other means.",
   "DEVELOPERS_SECTION1_OPTION1_TITLE": "Contact",
-  "DEVELOPERS_SECTION1_OPTION1_TEXT": "<a href=\"#form_contact\">Complete the form</a> with your contact information.",
+  "DEVELOPERS_SECTION1_OPTION1_TEXT": "Complete the form with your contact information.",
   "DEVELOPERS_SECTION1_OPTION2_TITLE": "Advice",
   "DEVELOPERS_SECTION1_OPTION2_TEXT": "We will advise you on the acceptance requirements.",
   "DEVELOPERS_SECTION1_OPTION3_TITLE": "Analysis",

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RootScopeService } from '../../../core/services/root-scope.service';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { UserInfo } from '../../../user-info';
+import { UserInfo } from '../../../core/user-info';
 
 @Component({
   selector: 'app-right-icons',
