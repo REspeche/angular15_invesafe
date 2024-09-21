@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, TitleStrategy } from '@angular/router';
+import { CustomTitleStrategyService } from './core/services/title-strategy.service';
 
 import { HomeComponent } from './user/home/home.component';
 import { AboutComponent } from './user/about/about.component';
@@ -17,52 +18,52 @@ const routes: Routes = [
   { 
     path: 'home',
     component: HomeComponent,
-    title: 'INVESAFE | Real estate crowdfunding platform'
+    title: 'Real estate crowdfunding platform'
   },
   { 
     path: 'about',
     component: AboutComponent,
-    title: 'INVESAFE - About us'
+    title: 'About us'
   },
   { 
     path: 'operative',
     component: OperativeComponent,
-    title: 'INVESAFE - How we working?'
+    title: 'How we working?'
   },
   { 
     path: 'projects',
     component: ProjectsComponent,
-    title: 'INVESAFE - Marketplace'
+    title: 'Marketplace'
   },
   { 
     path: 'developers',
     component: DevelopersComponent,
-    title: 'INVESAFE - I\'m a Developer'
+    title: 'I\'m a Developer'
   },
   { 
     path: 'contact',
     component: ContactComponent,
-    title: 'INVESAFE - Contact us'
+    title: 'Contact us'
   },
   { 
     path: 'changelog',
     component: ChangelogComponent,
-    title: 'INVESAFE - Change log'
+    title: 'Change log'
   },
   { 
     path: 'privacypolicy',
     component: PrivacypolicyComponent,
-    title: 'INVESAFE - Privacy Policy'
+    title: 'Privacy Policy'
   },
   { 
     path: 'termsofuse',
     component: TermsofuseComponent,
-    title: 'INVESAFE - Terms of use'
+    title: 'Terms of use'
   },
   { 
     path: 'accessibilitystatement',
     component: AccessibilitystatementComponent,
-    title: 'INVESAFE - Accessibility statement'
+    title: 'Accessibility statement'
   }
 ];
 
@@ -76,6 +77,9 @@ const routes: Routes = [
         scrollPositionRestoration: 'enabled'
       } 
     )
+  ],
+  providers: [
+    { provide: TitleStrategy, useClass: CustomTitleStrategyService }
   ],
   exports: [
     RouterModule
