@@ -1,6 +1,6 @@
 <ul class="navbar-nav nav-flex-icons">
     <li class="nav-item" style="position: relative;" [hidden]="!canInvest">
-      <a class="nav-link link-cart" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)" ng-click="clickAction(106)">
+      <a class="nav-link link-cart" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)">
         <i class="fas fa-shopping-cart shopping-cart"></i>
         <span class="badge rounded-pill badge-notification bg-danger" ng-show="alerts && alerts.cart">{{alerts.cart}}</span>
       </a>
@@ -9,7 +9,7 @@
       <app-flags-language></app-flags-language>
     </li>
     <li class="nav-item active" [hidden]="userInfo.isLogin || !canInvest">
-      <a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="clickShowLogin()" class="nav-link">
+      <a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link">
         <div class="d-none d-md-block text-info">
           <fa-icon class="fa-under2 userBtn" [icon]="faUser"></fa-icon><span>{{ 'MNU_LOGIN' | translate }}</span>
         </div>
@@ -24,11 +24,11 @@
         <img class="rounded-circle img-fluid avatar ml-1">
       </a>
       <div class="dropdown-menu dropdown-menu-right dropdown-secondary" aria-labelledby="userDropdown">
-        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)" ng-click="clickItemMenu(1)"><span>{{ 'MNU_PANEL' | translate }}</span><span class="ml-1" ng-show="userInfo.role==2">{{ 'MNU_ADMIN' | translate }}</span></a>
-        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)" ng-click="clickItemMenu(6)">{{ 'MNU_MY_PROFILE' | translate }}</a>
-        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)" ng-click="clickItemMenu(29)">{{ 'MNU_SECURITY' | translate }}</a>
+        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)"><span>{{ 'MNU_PANEL' | translate }}</span><span class="ml-1" ng-show="userInfo.role==2">{{ 'MNU_ADMIN' | translate }}</span></a>
+        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)">{{ 'MNU_MY_PROFILE' | translate }}</a>
+        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)">{{ 'MNU_SECURITY' | translate }}</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)" ng-click="logout()">{{ 'MNU_CLOSE_SESSION' | translate }}</a>
+        <a class="dropdown-item" data-toggle="collapse" data-target=".navbar-collapse.show" href="javascript:void(0)">{{ 'MNU_CLOSE_SESSION' | translate }}</a>
       </div>
     </li>
   </ul>

@@ -11,4 +11,8 @@ export class DevelopersComponent {
   faCheck = faCheck;
 
   constructor() {}
+
+  toIAmDeveloper() {
+    alert('toIAmDeveloper');
+  }
 }

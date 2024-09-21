@@ -11,4 +11,16 @@ export class HomeComponent {
   faChartLine = faChartLine;
   faTint = faTint;
   faPuzzlePiece = faPuzzlePiece;
+
+  getFinancial() {
+    alert('getFinancial');
+  }
+
+  startToInvest() {
+    alert('startToInvest');
+  }
+
+  showPreviousProperties() {
+    alert('showPreviousProperties');
+  }
 }

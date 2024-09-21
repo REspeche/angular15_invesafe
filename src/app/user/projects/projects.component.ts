@@ -18,4 +18,8 @@ export class ProjectsComponent implements OnInit {
   showPreviousProperties () {
     alert(1);
   }
+
+  clickSignUp() {
+    alert('clickSignUp');
+  }
 }

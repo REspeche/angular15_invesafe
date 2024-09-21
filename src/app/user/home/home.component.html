@@ -24,8 +24,8 @@
 
                         <p class="mb-4">{{ 'SLIDE_TEXT' | translate }}s</p>
 
-                        <a href="#" ng-click="clickAction(113)" class="btn btn-linea-celeste btn-lg">{{ 'SLIDE_BUTTON1' | translate }}</a>
-                        <a href="#" ng-click="clickAction(105)" class="btn btn-fucsia btn-lg">{{ 'SLIDE_BUTTON2' | translate }}</a>
+                        <a href="javascript:void(0)" (click)="getFinancial()" class="btn btn-linea-celeste btn-lg">{{ 'SLIDE_BUTTON1' | translate }}</a>
+                        <a href="javascript:void(0)" (click)="startToInvest()" class="btn btn-fucsia btn-lg">{{ 'SLIDE_BUTTON2' | translate }}</a>
                     </div>
                     <!-- Content -->
 
@@ -56,7 +56,7 @@
                 <p class="mb-3 text-center">{{ 'HOME_SECTION1_TEXT' | translate }}</p>
 
                 <div class="text-center">
-                    <a href="#" ng-click="clickAction(110)" class="btn btn-fucsia btn-lg text-center">{{ 'BUTTON_LEARN_MORE' | translate }}</a>
+                    <a routerLink="/about" class="btn btn-fucsia btn-lg text-center">{{ 'BUTTON_LEARN_MORE' | translate }}</a>
                 </div>
 
             </div>
@@ -133,7 +133,7 @@
                     </li>
                 </ul>
 
-                <a href="#" ng-click="clickAction(109)" class="btn btn-fucsia btn-lg">{{ 'BUTTON_MORE_INFORMATION' | translate }}</a>
+                <a routerLink="/operative" class="btn btn-fucsia btn-lg">{{ 'BUTTON_MORE_INFORMATION' | translate }}</a>
 
             </div>
             <!--/Grid column-->
@@ -158,7 +158,7 @@
 
                 <p class="mb-4">{{ 'HOME_SECTION4_TEXT' | translate }}s</p>
 
-                <a class="btn btn-celeste btn-lg" href="#" ng-click="clickAction(105)">{{ 'BUTTON_VIEW_PROJECTS' | translate }}</a>
+                <a class="btn btn-celeste btn-lg" routerLink="/projects">{{ 'BUTTON_VIEW_PROJECTS' | translate }}</a>
 
             </div>
             <!--/Grid column-->
@@ -231,7 +231,7 @@
                     </li>
                 </ul>
                 
-                <a href="#" ng-click="clickAction(109)" class="btn btn-fucsia btn-lg">{{ 'BUTTON_MORE_INFORMATION' | translate }}</a>
+                <a routerLink="/operative" class="btn btn-fucsia btn-lg">{{ 'BUTTON_MORE_INFORMATION' | translate }}</a>
 
             </div>
             <!--/Grid column-->
@@ -249,7 +249,7 @@
             <img src="/assets/img/back/back_home1.jpg" class="bg-image opacity-50 lazyload">
             <div class="col-12">
                 <h3 class="h1" >{{ 'HOME_SECTION6_TITLE' | translate }}</h3>
-                <a class="btn btn-linea-celeste btn-lg" ng-click="showPreviousProperties()">{{ 'BTN_PREVIOUS_PROPERTIES' | translate }}</a>
+                <a class="btn btn-linea-celeste btn-lg" (click)="showPreviousProperties()">{{ 'BTN_PREVIOUS_PROPERTIES' | translate }}</a>
             </div>
         </div>
     </div>

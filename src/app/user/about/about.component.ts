@@ -8,4 +8,8 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 })
 export class AboutComponent {
   faLinkedinIn = faLinkedinIn;
+
+  showVacants() {
+    alert('showVacants');
+  }
 }

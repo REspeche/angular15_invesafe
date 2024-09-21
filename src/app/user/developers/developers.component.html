@@ -37,7 +37,7 @@
                             <div class="form-group">
                                 <small>* <span>{{ 'DEVELOPERS_FORM_REFERENCE' | translate }}</span></small>
                             </div>
-                            <button type="button" data-action="save" class="btn btn-lg btn-celeste btn-block" ng-click="toIAmDeveloper()">
+                            <button type="button" data-action="save" class="btn btn-lg btn-celeste btn-block" (click)="toIAmDeveloper()">
                                 <span>{{ 'DEVELOPERS_FORM_BTN' | translate }}</span>
                             </button>
                         </form>
