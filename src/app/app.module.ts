@@ -15,6 +15,10 @@ import { OperativeComponent } from './user/operative/operative.component';
 import { ProjectsComponent } from './user/projects/projects.component';
 import { DevelopersComponent } from './user/developers/developers.component';
 import { ContactComponent } from './user/contact/contact.component';
+import { ChangelogComponent } from './user/changelog/changelog.component';
+import { PrivacypolicyComponent } from './user/privacypolicy/privacypolicy.component';
+import { TermsofuseComponent } from './user/termsofuse/termsofuse.component';
+import { AccessibilitystatementComponent } from './user/accessibilitystatement/accessibilitystatement.component';
 
 declare global {
   interface Window { 
@@ -38,7 +42,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     OperativeComponent,
     ProjectsComponent,
     DevelopersComponent,
-    ContactComponent
+    ContactComponent,
+    ChangelogComponent,
+    PrivacypolicyComponent,
+    TermsofuseComponent,
+    AccessibilitystatementComponent
   ],
   imports: [
     BrowserModule,

@@ -67,7 +67,7 @@
                         </ul>
                     </li>
                     <li class="nav-item" [hidden]="userInfo.isLogin || !canInvest">
-                        <a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse.show" ng-click="clickSignUp()" class="nav-link waves-effect text-info">
+                        <a href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse.show" (click)="clickSignUp()" class="nav-link waves-effect text-info">
                         <span>{{ 'MNU_SIGN_UP' | translate }}</span>
                         </a>
                     </li>
@@ -136,7 +136,7 @@
                         <ul class="list-unstyled">
                             <li> <a href="https://blog.invesafe.com/{{lang}}" target="_blank">{{ 'MENU_BLOG' | translate }}</a> </li>
                             <li> <a href="https://help.invesafe.com/{{lang}}" target="_blank">{{ 'MENU_HELP' | translate }}</a> </li>
-                            <li> <a href="#" ng-click="clickAction(112)">{{ 'MENU_CHANGE_CONTROL' | translate }}</a> </li>
+                            <li> <a routerLink="/changelog">{{ 'MENU_CHANGE_CONTROL' | translate }}</a> </li>
                         </ul>
                     </div>
                 </div>

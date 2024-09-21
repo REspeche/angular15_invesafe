@@ -33,4 +33,8 @@ export class AppComponent implements AfterViewInit {
     };
   }
 
+  clickSignUp() {
+    alert('clickSignUp');
+  }
+
 }

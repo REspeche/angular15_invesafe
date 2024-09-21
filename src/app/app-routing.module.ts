@@ -7,6 +7,10 @@ import { OperativeComponent } from './user/operative/operative.component';
 import { ProjectsComponent } from './user/projects/projects.component';
 import { DevelopersComponent } from './user/developers/developers.component';
 import { ContactComponent } from './user/contact/contact.component';
+import { ChangelogComponent } from './user/changelog/changelog.component';
+import { PrivacypolicyComponent } from './user/privacypolicy/privacypolicy.component';
+import { TermsofuseComponent } from './user/termsofuse/termsofuse.component';
+import { AccessibilitystatementComponent } from './user/accessibilitystatement/accessibilitystatement.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -39,6 +43,26 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent,
     title: 'INVESAFE - Contact us'
+  },
+  { 
+    path: 'changelog',
+    component: ChangelogComponent,
+    title: 'INVESAFE - Change log'
+  },
+  { 
+    path: 'privacypolicy',
+    component: PrivacypolicyComponent,
+    title: 'INVESAFE - Privacy Policy'
+  },
+  { 
+    path: 'termsofuse',
+    component: TermsofuseComponent,
+    title: 'INVESAFE - Terms of use'
+  },
+  { 
+    path: 'accessibilitystatement',
+    component: AccessibilitystatementComponent,
+    title: 'INVESAFE - Accessibility statement'
   }
 ];
 
